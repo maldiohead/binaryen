@@ -157,7 +157,7 @@ NATIVECC = (os.environ.get('CC') or which('mingw32-gcc') or
             which('gcc') or which('clang'))
 NATIVEXX = (os.environ.get('CXX') or which('mingw32-g++') or
             which('g++') or which('clang++'))
-NODEJS = which('nodejs') or which('node')
+NODEJS = which('node')
 MOZJS = which('mozjs') or which('spidermonkey')
 EMCC = which('emcc')
 
@@ -170,7 +170,6 @@ WASM2ASM = [os.path.join(options.binaryen_bin, 'wasm2asm')]
 WASM_CTOR_EVAL = [os.path.join(options.binaryen_bin, 'wasm-ctor-eval')]
 WASM_SHELL = [os.path.join(options.binaryen_bin, 'wasm-shell')]
 WASM_MERGE = [os.path.join(options.binaryen_bin, 'wasm-merge')]
-S2WASM = [os.path.join(options.binaryen_bin, 's2wasm')]
 WASM_REDUCE = [os.path.join(options.binaryen_bin, 'wasm-reduce')]
 WASM_METADCE = [os.path.join(options.binaryen_bin, 'wasm-metadce')]
 WASM_EMSCRIPTEN_FINALIZE = [os.path.join(options.binaryen_bin,
